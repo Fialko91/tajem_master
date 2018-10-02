@@ -1,4 +1,4 @@
-@import "bourbon"
+//@import "bourbon"
 @import "vars"
 
 /*==========  Desktop First  ==========*/
@@ -10,17 +10,140 @@
 
 /* Medium Devices, Desktops */
 @media only screen and (max-width : 992px)
-	/**/
+  .story_container
+    justify-content: center
+    padding: 50px 0
 
+  .team_bc
+    .team_top
+      padding-bottom: 50px
+    .team_top::before
+      bottom: 35px
+    .team_container
+      display: flex
+      justify-content: center
+      padding-bottom: 35px
+      &_item
+        margin: 0 5px 10px
+        width: 220px
+        padding-bottom: 10px
+        &_face
+          width: 220px
+          height: 170px
+          .face_images
+            width: 130px
+            height: 130px
+
+@media only screen and (max-width : 886px)
+  .footer_bc
+    .footer_cont
+      display: flex
+      justify-content: center
+      .about, .our_studio, .stay_in_touch
+        padding-bottom: 20px
+  
+@media only screen and (max-width : 831px)
+  .story_container
+    .story_items
+      max-width: 100%
+  .story_items_button
+    display: flex
+    justify-content: center
+    margin: 0 auto
+
+  .bc_reviews
+    .text_wrapper
+      .text_cont
+        .text_desc
+          font-size: 14px
+          padding-bottom: 35px
 
 /* Small Devices, Tablets */
 @media only screen and (max-width : 768px)
-	/**/
+  .toolbar_items_li
+    padding: 10px 0 20px
+    //padding-bottom: 20px
+  .toolbar_menu_icon
+    display: block
+    position: absolute
+    right: 0
+  .bc_text_hero
+    font-size: 28px
+    padding-bottom: 28px
+  .bc_text_desc
+    padding: 25px 0 40px
+
+
+  .story_container
+    padding: 30px 0
+    .story_items
+      padding-left: 0
+@media only screen and (max-width : 670px)
+  .bc_reviews
+    height: 600px
+
+@media only screen and (max-width : 587px)
+    .footer_bc
+      .footer_bottom
+        display: flex
+        justify-content: center
+    //    .footer_bottom_interface
+    //      display: flex
+    //      flex-direction: column
+    //      text-align: center
+
+@media only screen and (max-width : 500px)
+  .team_bc
+    height: 1200px
+
+  .works_container
+    display: flex
+    flex-direction: column
+    text-align: center
+    .works_name
+      padding-bottom: 7px
+    .all_project
+      margin: 0 auto
+
+    //.all_project::before
+    //  right: 60px
 
 
 /* Extra Small Devices, Phones */
 @media only screen and (max-width : 480px)
-	/**/
+  .bc_text_hero
+    font-size: 24px
+    padding-bottom: 24px
+  .bc_text_desc
+    font-size: 12px
+    padding: 20px 0 20px
+  .bc_text_button
+    width: 100px
+  .btn
+    padding: 10px
+    font-size: 14px
+  .slick-dots
+    bottom: 50px
+
+@media only screen and (max-width : 382px)
+  .client_wrapper
+    .client_cont
+      .logo_cont
+        .logo_cont_images
+          margin: 0 auto
+        .logo_cont_images:nth-child(2)
+          padding-top: 35px
+
+  .footer_bc
+    .footer_bottom_interface
+
+      .footer_bottom_interface_item
+        font-size: 12px
+
+
+@media only screen and (max-width : 335px)
+  .toolbar_menu_icon
+    right: 15px
 
 
 /* Custom, iPhone Retina */

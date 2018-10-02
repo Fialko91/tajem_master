@@ -28,6 +28,8 @@ gulp.task('bower', function () {
 gulp.task('scripts', function() {
 	return gulp.src([
 		'app/libs/jquery/dist/jquery.min.js',
+		'app/libs/slick/slick.js',
+		'app/libs/owl-carousel/owl-carousel.min.js',
 		'app/js/common.js', // Всегда в конце
 		])
 	.pipe(concat('scripts.min.js'))
