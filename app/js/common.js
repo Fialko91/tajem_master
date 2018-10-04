@@ -1,6 +1,9 @@
 $(document).ready(function () {
     $(".bc_top_img, .bc_team_img").slick({
-        dots: true
+        dots: true,
+        autoplay: true,
+        speed: 3000
+
     });
 
     function wRezise() {
@@ -56,6 +59,8 @@ $(document).ready(function () {
         }
     });
 
+
+
     $(document).ready(function(){
         $(".toolbar_items").on("click","a", function (event) {
             event.preventDefault();
@@ -63,6 +68,25 @@ $(document).ready(function () {
                 top = $(id).offset().top;
             $('body,html').animate({scrollTop: top}, 1500);
         });
+    });
+
+//---------------------- button top ------------
+
+    $(document).ready(function(){
+
+        $(window).scroll(function(){
+            if ($(this).scrollTop() > 100) {
+                $('.scrollup').fadeIn();
+            } else {
+                $('.scrollup').fadeOut();
+            }
+        });
+
+        $('.scrollup').click(function(){
+            $("html, body").animate({ scrollTop: 0 }, 600);
+            return false;
+        });
+
     });
 
 });

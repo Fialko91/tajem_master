@@ -34,7 +34,7 @@
             width: 130px
             height: 130px
 
-@media only screen and (max-width : 886px)
+@media only screen and (max-width : 922px)
   .footer_bc
     .footer_cont
       display: flex
@@ -87,10 +87,6 @@
       .footer_bottom
         display: flex
         justify-content: center
-    //    .footer_bottom_interface
-    //      display: flex
-    //      flex-direction: column
-    //      text-align: center
 
 @media only screen and (max-width : 500px)
   .team_bc
@@ -104,9 +100,6 @@
       padding-bottom: 7px
     .all_project
       margin: 0 auto
-
-    //.all_project::before
-    //  right: 60px
 
 
 /* Extra Small Devices, Phones */
@@ -132,8 +125,6 @@
         .face_images
           width: 35px
           height: 35px
-  //.slick-slide
-  //  width: 40px
 
 @media only screen and (max-width : 382px)
   .client_wrapper
@@ -150,10 +141,23 @@
       .footer_bottom_interface_item
         font-size: 12px
 
+  .text_wrapper
+    .slider-nav
+      .slick-prev, .slick-next
+        display: none !important
+
+@media only screen and (max-width : 377px)
+  .logo_cont
+    &_left
+      padding: 0
+      margin: 0 auto
+    &_right
+      margin: 0 auto
 
 @media only screen and (max-width : 335px)
   .toolbar_menu_icon
     right: 15px
+
 
 
 /* Custom, iPhone Retina */
