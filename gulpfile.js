@@ -15,7 +15,7 @@ var gulp           = require('gulp'),
 		wiredep        = require('wiredep').stream;
  
 gulp.task('bower', function () {
-  gulp.src('./app/index.html')
+  gulp.src('./app/index.html')  //------ <- here add return
     .pipe(wiredep({
     	directory: 'app/libs/'
       // optional: 'configuration',

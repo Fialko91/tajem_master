@@ -1,17 +1,19 @@
 $(document).ready(function () {
-    $(".bc_top_img, .bc_team_img").slick({
+    $(".bc_top_item").slick({
         dots: true,
         autoplay: true,
-        speed: 3000
+        speed: 2000
 
     });
 
-    function wRezise() {
-        $(".bc_top_item, .bc_team_img .reviews_container").css("height", $(window).height());
-    };
-    $(window).resize(function () {
-        wRezise()
-    });
+    // function wRezise() {
+    //     $(".bc_top_container, .bc_team_img .reviews_container").css("height", $(window).height());
+    // };
+    // $(window).resize(function () {
+    //     wRezise()
+    // });
+
+
 
 //   -------------reviews----------
 
